@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinnacle Media Group - Social Media Marketing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gold': '#FFD700',
+                        'dark-gold': '#B8860B',
+                        'navy': '#1e3a8a',
+                        'light-blue': '#3b82f6'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #000000 50%, #FFD700 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(45deg, #FFD700, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #FFD700, #B8860B);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #B8860B, #FFD700);
+            transform: translateY(-2px);
+        }
+        
+        .service-icon {
+            background: linear-gradient(45deg, #3b82f6, #1e3a8a);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-black text-white py-4 px-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold">
+                <span class="text-gold">PINNACLE</span> 
+                <span class="text-light-blue">MEDIA</span>
+            </div>
+            <div class="space-x-6">
+                <button onclick="showPage('home')" class="nav-btn hover:text-gold transition-colors duration-300">Home</button>
+                <button onclick="showPage('services')" class="nav-btn hover:text-gold transition-colors duration-300">Services & Info</button>
+                <button onclick="showPage('contact')" class="nav-btn hover:text-gold transition-colors duration-300">Contact</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page 1: Home -->
+    <div id="home-page" class="page-content">
+        <!-- Header -->
+        <header class="gradient-bg text-white py-16 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                        <span class="text-gold">PINNACLE</span> 
+                        <span class="text-white">MEDIA</span> 
+                        <span class="text-light-blue">GROUP</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-200 mb-8">Social Media Marketing Excellence</p>
+                    <button onclick="showPage('services')" class="btn-primary text-black font-bold py-4 px-8 rounded-lg text-lg shadow-lg">
+                        Explore Our Services
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Welcome Section -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gradient">Welcome to Excellence</h2>
+                <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
+                    Transform your digital presence with Pinnacle Media Group. We're here to help your business reach new heights through strategic social media marketing.
+                </p>
+
+
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🚀</div>
+                        <h3 class="text-xl font-bold text-navy mb-2">Growth Focused</h3>
+                        <p class="text-gray-600">Strategies designed to scale your business</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">💡</div>
+                        <h3 class="text-xl font-bold text-navy mb-2">Creative Solutions</h3>
+                        <p class="text-gray-600">Innovative content that stands out</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">📊</div>
+                        <h3 class="text-xl font-bold text-navy mb-2">Data Driven</h3>
+                        <p class="text-gray-600">Results backed by analytics</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact -->
+        <section class="py-16 px-4 bg-gray-50">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-8 text-navy">Ready to Get Started?</h2>
+                <p class="text-lg text-gray-700 mb-8">Contact us today to discuss how we can help your business grow.</p>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-gold text-xl">📞</span>
+                        <span class="text-lg">0986010654</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-gold text-xl">📧</span>
+                        <span class="text-lg">pinnaclemedia@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Page 2: Services & Information -->
+    <div id="services-page" class="page-content hidden">
+        <!-- Services Header -->
+        <header class="gradient-bg text-white py-16 px-4">
+            <div class="max-w-6xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gold">Our Services & Information</h1>
+                <p class="text-xl text-gray-200">Complete Social Media Marketing Solutions</p>
+            </div>
+        </header>
+
+        <!-- Executive Summary -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gradient">Executive Summary</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Pinnacle Media Group is a full-service social media marketing agency dedicated to helping businesses grow their online presence, attract customers, and increase revenue. We specialize in creating engaging content, managing social media platforms, and running paid campaigns that deliver measurable results.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Founded in 2022 in the heart of Addis Ababa, we have quickly established ourselves as a trusted partner for Ethiopian businesses looking to dominate the digital landscape. Our team combines local market knowledge with international best practices to deliver exceptional results.
+                        </p>
+                        <div class="bg-gold bg-opacity-10 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold text-navy mb-3">Our Specialization</h3>
+                            <p class="text-gray-700">We focus exclusively on social media management, allowing us to perfect our craft and deliver unmatched expertise in content creation, audience engagement, and platform optimization.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold text-navy mb-4">Company Highlights</h3>
+                            <div class="space-y-3">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Location:</span>
+                                    <span class="font-semibold">Addis Ababa, Ethiopia</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Specialization:</span>
+                                    <span class="font-semibold">Social Media Marketing</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Languages:</span>
+                                    <span class="font-semibold">Amharic, English</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Service Areas:</span>
+                                    <span class="font-semibold">All Ethiopian Cities</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Response Time:</span>
+                                    <span class="font-semibold">Within 24 Hours</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Support:</span>
+                                    <span class="font-semibold">24/7 Available</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-light-blue bg-opacity-10 p-6 rounded-lg">
+                            <h3 class="text-xl font-bold text-navy mb-3">Our Mission</h3>
+                            <p class="text-gray-700">To empower Ethiopian businesses with world-class social media marketing that drives real growth and connects brands with their ideal customers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section class="py-16 px-4 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-navy">About Pinnacle Media Group</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                        <h3 class="text-2xl font-bold text-gold mb-4">Our Mission</h3>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Pinnacle Media Group's mission is to help businesses reach the <span class="text-gold font-semibold">pinnacle of success</span> online. We combine creativity, strategy, and analytics to grow brands, improve visibility, and drive sales.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <span class="text-gold text-xl">📍</span>
+                                <span class="text-gray-700"><strong>Location:</strong> Addis Ababa, Ethiopia</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-gold text-xl">📅</span>
+                                <span class="text-gray-700"><strong>Established:</strong> 2022</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-gold text-xl">🏢</span>
+                                <span class="text-gray-700"><strong>Company Type:</strong> Digital Marketing Agency</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                        <h3 class="text-2xl font-bold text-light-blue mb-4">Our Experience</h3>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            With over 2 years of dedicated experience in the Ethiopian digital marketing landscape, we've helped dozens of businesses transform their online presence and achieve remarkable growth.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center p-4 bg-gray-50 rounded-lg">
+                                <div class="text-2xl font-bold text-gold">50+</div>
+                                <div class="text-sm text-gray-600">Happy Clients</div>
+                            </div>
+                            <div class="text-center p-4 bg-gray-50 rounded-lg">
+                                <div class="text-2xl font-bold text-light-blue">1000+</div>
+                                <div class="text-sm text-gray-600">Content Created</div>
+                            </div>
+                            <div class="text-center p-4 bg-gray-50 rounded-lg">
+                                <div class="text-2xl font-bold text-gold">200%</div>
+                                <div class="text-sm text-gray-600">Avg Growth Rate</div>
+                            </div>
+                            <div class="text-center p-4 bg-gray-50 rounded-lg">
+                                <div class="text-2xl font-bold text-light-blue">24/7</div>
+                                <div class="text-sm text-gray-600">Support Available</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Company Values -->
+                <div class="mt-12">
+                    <h3 class="text-2xl font-bold text-center mb-8 text-navy">Our Core Values</h3>
+                    <div class="grid md:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="text-4xl mb-3">🎯</div>
+                            <h4 class="font-bold text-navy mb-2">Excellence</h4>
+                            <p class="text-gray-600 text-sm">Delivering top-quality results in every project</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl mb-3">🤝</div>
+                            <h4 class="font-bold text-navy mb-2">Partnership</h4>
+                            <p class="text-gray-600 text-sm">Building long-term relationships with our clients</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl mb-3">💡</div>
+                            <h4 class="font-bold text-navy mb-2">Innovation</h4>
+                            <p class="text-gray-600 text-sm">Staying ahead with latest trends and technologies</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl mb-3">📈</div>
+                            <h4 class="font-bold text-navy mb-2">Results</h4>
+                            <p class="text-gray-600 text-sm">Focused on measurable business growth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services & Pricing -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gradient">Our Social Media Management Services</h2>
+                <p class="text-center text-gray-600 mb-12 text-lg">Professional social media management packages designed for Ethiopian businesses</p>
+                
+                <!-- Pricing Cards -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                    <!-- Basic Package -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 card-hover border-t-4 border-gold relative">
+                        <div class="text-center">
+                            <div class="service-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-white text-2xl">📱</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 text-navy">Basic Management</h3>
+                            <div class="text-3xl font-bold text-gold mb-2">8,000 ETB</div>
+                            <div class="text-gray-500 mb-4">per month</div>
+                            <ul class="text-left space-y-2 text-sm text-gray-600 mb-6">
+                                <li class="flex items-center"><span class="text-gold mr-2">✓</span>Social Media Management</li>
+                                <li class="flex items-center"><span class="text-gold mr-2">✓</span>10 Videos per month</li>
+                                <li class="flex items-center"><span class="text-gold mr-2">✓</span>Facebook & Instagram</li>
+                                <li class="flex items-center"><span class="text-gold mr-2">✓</span>Basic Analytics</li>
+                                <li class="flex items-center"><span class="text-gold mr-2">✓</span>Community Management</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Standard Package -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 card-hover border-t-4 border-light-blue relative">
+                        <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                            <span class="bg-light-blue text-white px-3 py-1 rounded-full text-xs font-bold">POPULAR</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="service-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-white text-2xl">🎥</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 text-navy">Standard Package</h3>
+                            <div class="text-3xl font-bold text-light-blue mb-2">10,000 ETB</div>
+                            <div class="text-gray-500 mb-4">per month</div>
+                            <ul class="text-left space-y-2 text-sm text-gray-600 mb-6">
+                                <li class="flex items-center"><span class="text-light-blue mr-2">✓</span>Everything in Basic</li>
+                                <li class="flex items-center"><span class="text-light-blue mr-2">✓</span>13 Videos per month</li>
+                                <li class="flex items-center"><span class="text-light-blue mr-2">✓</span>Content Creation</li>
+                                <li class="flex items-center"><span class="text-light-blue mr-2">✓</span>TikTok Management</li>
+                                <li class="flex items-center"><span class="text-light-blue mr-2">✓</span>Advanced Analytics</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Premium Package -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 card-hover border-t-4 border-gold relative">
+                        <div class="text-center">
+                            <div class="service-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-white text-2xl">🚀</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 text-navy">Premium Growth</h3>
+                            <div class="text-3xl font-bold text-gold mb-2">16,000 ETB</div>
+                            <div class="text-gray-500 mb-4">per month</div>
+                            <ul class="text-left space-y-2 text-sm text-gray-600 mb-6">
+                                <li class="flex items-center"><span class="text-gold mr-2">✓</span>Everything in Standard</li>
+                                <li class="flex items-center"><span class="text-gold mr-2">✓</span>1 Video per day (30/month)</li>
+                                <li class="flex items-center"><span class="text-gold mr-2">✓</span>YouTube Management</li>
+                                <li class="flex items-center"><span class="text-gold mr-2">✓</span>Paid Ads Setup</li>
+                                <li class="flex items-center"><span class="text-gold mr-2">✓</span>Weekly Reports</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Enterprise Package -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 card-hover border-t-4 border-navy relative">
+                        <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                            <span class="bg-navy text-white px-3 py-1 rounded-full text-xs font-bold">ENTERPRISE</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="service-icon w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-white text-2xl">⚡</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2 text-navy">Maximum Growth</h3>
+                            <div class="text-3xl font-bold text-navy mb-2">20,000 ETB</div>
+                            <div class="text-gray-500 mb-4">per month</div>
+                            <ul class="text-left space-y-2 text-sm text-gray-600 mb-6">
+                                <li class="flex items-center"><span class="text-navy mr-2">✓</span>Everything in Premium</li>
+                                <li class="flex items-center"><span class="text-navy mr-2">✓</span>2 Videos per day (60/month)</li>
+                                <li class="flex items-center"><span class="text-navy mr-2">✓</span>All Platform Management</li>
+                                <li class="flex items-center"><span class="text-navy mr-2">✓</span>Advanced Paid Campaigns</li>
+                                <li class="flex items-center"><span class="text-navy mr-2">✓</span>Daily Monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What's Included Section -->
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-center mb-8 text-navy">What's Included in All Packages</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">📱</div>
+                            <h4 class="font-bold text-navy mb-2">Platform Management</h4>
+                            <p class="text-gray-600 text-sm">Facebook, Instagram, TikTok, YouTube account management and optimization</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">🎨</div>
+                            <h4 class="font-bold text-navy mb-2">Professional Content</h4>
+                            <p class="text-gray-600 text-sm">High-quality videos, graphics, and copywriting tailored to your brand</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">📊</div>
+                            <h4 class="font-bold text-navy mb-2">Performance Tracking</h4>
+                            <p class="text-gray-600 text-sm">Detailed analytics and monthly reports showing your growth and engagement</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">💬</div>
+                            <h4 class="font-bold text-navy mb-2">Community Engagement</h4>
+                            <p class="text-gray-600 text-sm">Responding to comments, messages, and building relationships with your audience</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">🎯</div>
+                            <h4 class="font-bold text-navy mb-2">Strategy Development</h4>
+                            <p class="text-gray-600 text-sm">Custom social media strategy aligned with your business goals</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl mb-4">📞</div>
+                            <h4 class="font-bold text-navy mb-2">Dedicated Support</h4>
+                            <p class="text-gray-600 text-sm">Direct communication with your account manager for quick responses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="py-16 px-4 bg-navy text-white">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gold">Why Choose Pinnacle Media Group</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gold text-2xl">✅</span>
+                        <p class="text-lg">Proven strategies for growth and engagement</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gold text-2xl">✅</span>
+                        <p class="text-lg">Creative, high-quality content</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gold text-2xl">✅</span>
+                        <p class="text-lg">Focus on ROI (return on investment)</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gold text-2xl">✅</span>
+                        <p class="text-lg">Transparent communication and reporting</p>
+                    </div>
+                    <div class="flex items-center space-x-4 md:col-span-2 justify-center">
+                        <span class="text-gold text-2xl">✅</span>
+                        <p class="text-lg">Affordable packages for all business sizes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Workflow -->
+        <section class="py-16 px-4 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gradient">Process Workflow</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+                    <div class="text-center">
+                        <div class="bg-gold text-black w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+                        <h3 class="font-bold text-navy mb-2">Discovery & Strategy</h3>
+                        <p class="text-gray-600 text-sm">Understand goals, audience, and brand</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-light-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+                        <h3 class="font-bold text-navy mb-2">Content Planning</h3>
+                        <p class="text-gray-600 text-sm">Create engaging posts and videos</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gold text-black w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+                        <h3 class="font-bold text-navy mb-2">Campaign Launch</h3>
+                        <p class="text-gray-600 text-sm">Run organic and paid campaigns</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-light-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">4</div>
+                        <h3 class="font-bold text-navy mb-2">Monitoring & Optimization</h3>
+                        <p class="text-gray-600 text-sm">Track results and improve performance</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gold text-black w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">5</div>
+                        <h3 class="font-bold text-navy mb-2">Reporting</h3>
+                        <p class="text-gray-600 text-sm">Provide clear insights and recommendations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-navy">Ready to Reach Your Pinnacle?</h2>
+                <p class="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
+                    Partner with Pinnacle Media Group and take your brand to the next level. We are ready to create a strong digital presence for your business and help you reach your pinnacle of success.
+                </p>
+                <button onclick="showPage('contact')" class="btn-primary text-black font-bold py-4 px-8 rounded-lg text-lg shadow-lg">
+                    Contact Us Now
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Page 3: Contact -->
+    <div id="contact-page" class="page-content hidden">
+        <!-- Contact Header -->
+        <header class="gradient-bg text-white py-16 px-4">
+            <div class="max-w-6xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gold">Contact Us</h1>
+                <p class="text-xl text-gray-200">Let's Start Your Journey to Success</p>
+            </div>
+        </header>
+
+        <!-- Contact Information -->
+        <section class="py-16 px-4 bg-white">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gradient">Get In Touch</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4 p-6 bg-gray-50 rounded-lg card-hover">
+                            <span class="text-gold text-3xl">📞</span>
+                            <div>
+                                <h3 class="font-bold text-xl text-navy">Phone</h3>
+                                <p class="text-gray-700 text-lg">0986010654</p>
+                                <p class="text-gray-500 text-sm">Available 9 AM - 6 PM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-6 bg-gray-50 rounded-lg card-hover">
+                            <span class="text-gold text-3xl">📧</span>
+                            <div>
+                                <h3 class="font-bold text-xl text-navy">Email</h3>
+                                <p class="text-gray-700 text-lg">pinnaclemedia@gmail.com</p>
+                                <p class="text-gray-500 text-sm">We respond within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4 p-6 bg-gray-50 rounded-lg card-hover">
+                            <span class="text-gold text-3xl">🌐</span>
+                            <div>
+                                <h3 class="font-bold text-xl text-navy">Website</h3>
+                                <p class="text-gray-700 text-lg">Coming Soon</p>
+                                <p class="text-gray-500 text-sm">Full website launching soon</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-6 bg-gray-50 rounded-lg card-hover">
+                            <span class="text-gold text-3xl">📱</span>
+                            <div>
+                                <h3 class="font-bold text-xl text-navy">Social Media</h3>
+                                <p class="text-gray-700 text-lg">@pinnaclemedia</p>
+                                <p class="text-gray-500 text-sm">Facebook, Instagram, TikTok, YouTube</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="py-16 px-4 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-navy">Complete Client Information Form</h2>
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <form id="contact-form" class="space-y-8">
+                        <!-- Personal Information -->
+                        <div class="border-b border-gray-200 pb-6">
+                            <h3 class="text-xl font-bold text-gold mb-4">👤 Personal Information</h3>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Full Name *</label>
+                                    <input type="text" name="fullName" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Job Title/Position</label>
+                                    <input type="text" name="jobTitle" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors" placeholder="e.g., CEO, Marketing Manager">
+                                </div>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6 mt-4">
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Email Address *</label>
+                                    <input type="email" name="email" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Phone Number *</label>
+                                    <input type="tel" name="phone" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors" placeholder="+251 9XX XXX XXX">
+                                </div>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6 mt-4">
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Alternative Phone</label>
+                                    <input type="tel" name="altPhone" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Preferred Contact Method</label>
+                                    <select name="contactMethod" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors">
+                                        <option>Phone Call</option>
+                                        <option>WhatsApp</option>
+                                        <option>Email</option>
+                                        <option>In-Person Meeting</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Company Information -->
+                        <div class="border-b border-gray-200 pb-6">
+                            <h3 class="text-xl font-bold text-light-blue mb-4">🏢 Company Information</h3>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Company Name *</label>
+                                    <input type="text" name="companyName" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Business Registration Number</label>
+                                    <input type="text" name="regNumber" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors">
+                                </div>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6 mt-4">
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Industry/Business Type *</label>
+                                    <select name="businessType" required class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors">
+                                        <option value="">Select your industry</option>
+                                        <option>Restaurant/Food & Beverage</option>
+                                        <option>Retail/E-commerce</option>
+                                        <option>Healthcare/Medical</option>
+                                        <option>Real Estate</option>
+                                        <option>Education/Training</option>
+                                        <option>Technology/IT</option>
+                                        <option>Fashion/Beauty</option>
+                                        <option>Automotive</option>
+                                        <option>Construction</option>
+                                        <option>Financial Services</option>
+                                        <option>Travel/Tourism</option>
+                                        <option>Entertainment/Events</option>
+                                        <option>Manufacturing</option>
+                                        <option>Professional Services</option>
+                                        <option>Non-Profit/NGO</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Company Size</label>
+                                    <select name="companySize" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors">
+                                        <option>1-5 employees</option>
+                                        <option>6-20 employees</option>
+                                        <option>21-50 employees</option>
+                                        <option>51-100 employees</option>
+                                        <option>100+ employees</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6 mt-4">
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Years in Business</label>
+                                    <select name="yearsInBusiness" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors">
+                                        <option>Less than 1 year</option>
+                                        <option>1-2 years</option>
+                                        <option>3-5 years</option>
+                                        <option>6-10 years</option>
+                                        <option>More than 10 years</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Monthly Revenue Range</label>
+                                    <select name="revenue" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors">
+                                        <option>Prefer not to say</option>
+                                        <option>Under 50,000 ETB</option>
+                                        <option>50,000 - 100,000 ETB</option>
+                                        <option>100,000 - 500,000 ETB</option>
+                                        <option>500,000 - 1,000,000 ETB</option>
+                                        <option>Over 1,000,000 ETB</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <label class="block text-navy font-bold mb-2">Company Address</label>
+                                <textarea name="address" rows="2" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors" placeholder="Street address, City, Region"></textarea>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6 mt-4">
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Company Website</label>
+                                    <input type="url" name="website" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors" placeholder="https://www.yourcompany.com">
+                                </div>
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Main Business Location</label>
+                                    <select name="location" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors">
+                                        <option>Addis Ababa</option>
+                                        <option>Dire Dawa</option>
+                                        <option>Mekelle</option>
+                                        <option>Gondar</option>
+                                        <option>Awasa</option>
+                                        <option>Bahir Dar</option>
+                                        <option>Jimma</option>
+                                        <option>Dessie</option>
+                                        <option>Other City</option>
+                                        <option>Multiple Locations</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Current Social Media Presence -->
+                        <div class="border-b border-gray-200 pb-6">
+                            <h3 class="text-xl font-bold text-gold mb-4">📱 Current Social Media Presence</h3>
+                            <div class="space-y-4">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="block text-navy font-bold mb-2">Facebook Page</label>
+                                        <input type="url" name="facebook" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors" placeholder="https://facebook.com/yourpage">
+                                    </div>
+                                    <div>
+                                        <label class="block text-navy font-bold mb-2">Instagram Account</label>
+                                        <input type="url" name="instagram" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors" placeholder="https://instagram.com/youraccount">
+                                    </div>
+                                </div>
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="block text-navy font-bold mb-2">TikTok Account</label>
+                                        <input type="url" name="tiktok" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors" placeholder="https://tiktok.com/@youraccount">
+                                    </div>
+                                    <div>
+                                        <label class="block text-navy font-bold mb-2">YouTube Channel</label>
+                                        <input type="url" name="youtube" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors" placeholder="https://youtube.com/yourchannel">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Current Social Media Management</label>
+                                    <select name="currentManagement" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors">
+                                        <option>We manage it ourselves</option>
+                                        <option>We have an in-house team</option>
+                                        <option>We use another agency</option>
+                                        <option>We don't have social media presence</option>
+                                        <option>It's not being managed actively</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service Requirements -->
+                        <div class="border-b border-gray-200 pb-6">
+                            <h3 class="text-xl font-bold text-light-blue mb-4">🎯 Service Requirements</h3>
+                            <div class="mb-4">
+                                <label class="block text-navy font-bold mb-2">Package Interest *</label>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <label class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                        <input type="radio" name="package" value="Basic Management - 8,000 ETB" required class="text-gold">
+                                        <div>
+                                            <span class="font-semibold">Basic Management</span>
+                                            <div class="text-sm text-gray-600">8,000 ETB/month - 10 videos</div>
+                                        </div>
+                                    </label>
+                                    <label class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                        <input type="radio" name="package" value="Standard Package - 10,000 ETB" class="text-gold">
+                                        <div>
+                                            <span class="font-semibold">Standard Package</span>
+                                            <div class="text-sm text-gray-600">10,000 ETB/month - 13 videos</div>
+                                        </div>
+                                    </label>
+                                    <label class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                        <input type="radio" name="package" value="Premium Growth - 16,000 ETB" class="text-gold">
+                                        <div>
+                                            <span class="font-semibold">Premium Growth</span>
+                                            <div class="text-sm text-gray-600">16,000 ETB/month - 30 videos</div>
+                                        </div>
+                                    </label>
+                                    <label class="flex items-center space-x-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-50 cursor-pointer">
+                                        <input type="radio" name="package" value="Maximum Growth - 20,000 ETB" class="text-gold">
+                                        <div>
+                                            <span class="font-semibold">Maximum Growth</span>
+                                            <div class="text-sm text-gray-600">20,000 ETB/month - 60 videos</div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Preferred Start Date</label>
+                                    <select name="startDate" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors">
+                                        <option>Immediately</option>
+                                        <option>Within 1 week</option>
+                                        <option>Within 2 weeks</option>
+                                        <option>Within 1 month</option>
+                                        <option>Within 2-3 months</option>
+                                        <option>Just exploring options</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Budget Range</label>
+                                    <select name="budget" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors">
+                                        <option>8,000 - 10,000 ETB</option>
+                                        <option>10,000 - 16,000 ETB</option>
+                                        <option>16,000 - 20,000 ETB</option>
+                                        <option>20,000+ ETB</option>
+                                        <option>Need to discuss</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Goals and Challenges -->
+                        <div class="border-b border-gray-200 pb-6">
+                            <h3 class="text-xl font-bold text-gold mb-4">🎯 Goals & Challenges</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Primary Business Goals</label>
+                                    <div class="grid md:grid-cols-2 gap-3">
+                                        <label class="flex items-center space-x-2">
+                                            <input type="checkbox" name="goals" value="Increase brand awareness" class="text-gold">
+                                            <span>Increase brand awareness</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2">
+                                            <input type="checkbox" name="goals" value="Generate more leads" class="text-gold">
+                                            <span>Generate more leads</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2">
+                                            <input type="checkbox" name="goals" value="Boost sales" class="text-gold">
+                                            <span>Boost sales</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2">
+                                            <input type="checkbox" name="goals" value="Improve customer engagement" class="text-gold">
+                                            <span>Improve customer engagement</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2">
+                                            <input type="checkbox" name="goals" value="Build online community" class="text-gold">
+                                            <span>Build online community</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2">
+                                            <input type="checkbox" name="goals" value="Launch new products" class="text-gold">
+                                            <span>Launch new products</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Current Challenges</label>
+                                    <textarea name="challenges" rows="3" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors" placeholder="What challenges are you facing with your current marketing efforts?"></textarea>
+                                </div>
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Target Audience Description</label>
+                                    <textarea name="targetAudience" rows="3" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors" placeholder="Describe your ideal customers (age, interests, location, etc.)"></textarea>
+                                </div>
+                                <div>
+                                    <label class="block text-navy font-bold mb-2">Additional Comments or Special Requirements</label>
+                                    <textarea name="comments" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:border-gold focus:outline-none transition-colors" placeholder="Any specific requirements, questions, or additional information you'd like to share?"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Agreement and Submit -->
+                        <div class="text-center">
+                            <div class="mb-6">
+                                <label class="flex items-center justify-center space-x-2">
+                                    <input type="checkbox" required class="text-gold">
+                                    <span class="text-sm text-gray-600">I agree to be contacted by Pinnacle Media Group regarding my inquiry and consent to the processing of my information for business purposes.</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn-primary text-black font-bold py-4 px-12 rounded-lg text-lg shadow-lg">
+                                Submit Complete Information
+                            </button>
+                            <p class="text-sm text-gray-500 mt-3">We'll respond within 24 hours with a customized proposal</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Contact Us -->
+        <section class="py-16 px-4 bg-navy text-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-8 text-gold">Why Contact Pinnacle Media Group?</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <div class="text-4xl mb-4">🎯</div>
+                        <h3 class="text-xl font-bold mb-2">Free Consultation</h3>
+                        <p class="text-gray-200">Get expert advice tailored to your business needs</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl mb-4">⚡</div>
+                        <h3 class="text-xl font-bold mb-2">Quick Response</h3>
+                        <p class="text-gray-200">We respond to all inquiries within 24 hours</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl mb-4">💼</div>
+                        <h3 class="text-xl font-bold mb-2">Custom Solutions</h3>
+                        <p class="text-gray-200">Strategies designed specifically for your business</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-gray-400">&copy; 2024 Pinnacle Media Group. All rights reserved.</p>
+            <p class="text-gold mt-2">Reach Your Pinnacle of Success</p>
+        </div>
+    </footer>
+
+    <script>
+        // Page navigation functionality
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page-content').forEach(page => {
+                page.classList.add('hidden');
+            });
+            
+            // Show selected page
+            document.getElementById(pageId + '-page').classList.remove('hidden');
+            
+            // Update navigation buttons
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('text-gold');
+                btn.classList.add('text-white');
+            });
+            
+            // Highlight active nav button
+            event.target.classList.remove('text-white');
+            event.target.classList.add('text-gold');
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Contact form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get all form data
+            const formData = new FormData(this);
+            const data = {};
+            
+            // Collect all form fields
+            for (let [key, value] of formData.entries()) {
+                if (data[key]) {
+                    // Handle multiple values (like checkboxes)
+                    if (Array.isArray(data[key])) {
+                        data[key].push(value);
+                    } else {
+                        data[key] = [data[key], value];
+                    }
+                } else {
+                    data[key] = value;
+                }
+            }
+            
+            // Get selected goals (checkboxes)
+            const goals = [];
+            this.querySelectorAll('input[name="goals"]:checked').forEach(checkbox => {
+                goals.push(checkbox.value);
+            });
+            
+            // Get selected package
+            const selectedPackage = this.querySelector('input[name="package"]:checked')?.value || 'Not selected';
+            
+            // Create comprehensive email content
+            const subject = `Complete Client Information - ${data.fullName} (${data.companyName})`;
+            const body = `
+COMPLETE CLIENT INFORMATION SUBMISSION
+=====================================
+
+👤 PERSONAL INFORMATION
+------------------------
+Full Name: ${data.fullName}
+Job Title/Position: ${data.jobTitle || 'Not provided'}
+Email Address: ${data.email}
+Phone Number: ${data.phone}
+Alternative Phone: ${data.altPhone || 'Not provided'}
+Preferred Contact Method: ${data.contactMethod}
+
+🏢 COMPANY INFORMATION
+----------------------
+Company Name: ${data.companyName}
+Business Registration Number: ${data.regNumber || 'Not provided'}
+Industry/Business Type: ${data.businessType}
+Company Size: ${data.companySize}
+Years in Business: ${data.yearsInBusiness}
+Monthly Revenue Range: ${data.revenue}
+Company Address: ${data.address || 'Not provided'}
+Company Website: ${data.website || 'Not provided'}
+Main Business Location: ${data.location}
+
+📱 CURRENT SOCIAL MEDIA PRESENCE
+--------------------------------
+Facebook Page: ${data.facebook || 'Not provided'}
+Instagram Account: ${data.instagram || 'Not provided'}
+TikTok Account: ${data.tiktok || 'Not provided'}
+YouTube Channel: ${data.youtube || 'Not provided'}
+Current Social Media Management: ${data.currentManagement}
+
+🎯 SERVICE REQUIREMENTS
+-----------------------
+Package Interest: ${selectedPackage}
+Preferred Start Date: ${data.startDate}
+Budget Range: ${data.budget}
+
+🎯 GOALS & CHALLENGES
+--------------------
+Primary Business Goals: ${goals.length > 0 ? goals.join(', ') : 'None selected'}
+
+Current Challenges:
+${data.challenges || 'Not provided'}
+
+Target Audience Description:
+${data.targetAudience || 'Not provided'}
+
+Additional Comments or Special Requirements:
+${data.comments || 'Not provided'}
+
+=====================================
+This comprehensive client information was submitted through the Pinnacle Media Group website contact form.
+
+NEXT STEPS:
+- Review client requirements
+- Prepare customized proposal
+- Schedule consultation call
+- Send detailed service agreement
+
+Contact the client within 24 hours as promised.
+            `.trim();
+            
+            // Create Gmail compose URL
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=pinnaclemedia@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Open Gmail in new tab
+            window.open(gmailUrl, '_blank', 'noopener,noreferrer');
+            
+            // Show success message
+            alert(`Thank you ${data.fullName}! Your complete information is being prepared in Gmail. Please send it to complete your inquiry. We'll respond within 24 hours with a customized proposal for ${data.companyName}!`);
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Initialize page - show home by default
+        document.addEventListener('DOMContentLoaded', function() {
+            showPage('home');
+            
+            // Set home as active in navigation
+            document.querySelector('button[onclick="showPage(\'home\')"]').classList.add('text-gold');
+            document.querySelector('button[onclick="showPage(\'home\')"]').classList.remove('text-white');
+        });
+
+        // Smooth scrolling for any internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'987bc85d94c4ec21',t:'MTc1OTMxOTg0OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
